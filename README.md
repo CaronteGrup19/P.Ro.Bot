@@ -33,10 +33,12 @@ Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
   ***Simulació i video***
   
 <li>Funció de Tracking de la Pilota: troba la pilota, i la retorna al Dummy que hem situat al projecte (simula el seu propietari)
+  
   ***Simulació i video***
  
 <li> Respostes anímiques (tant visuals com sonores) davant certs estímuls per definir les seves emocions.
-   ***Simulació i video dels casos***
+   
+  ***Simulació i video dels casos***
 
 ## Autors
  Adrià Amorós Berlanga<br>
