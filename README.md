@@ -28,6 +28,6 @@ Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
 [Esquema Software]: /IMG/EsqSW.png "Esquema Software"
 
 ## Autors
- Adrià Amorós Berlanga
- Alex Castro Gastón
- Dani Gómez Piquer - 2060700
+ Adrià Amorós Berlanga<br>
+ Alex Castro Gastón<br>
+ Dani Gómez Piquer - 2060700<br>
