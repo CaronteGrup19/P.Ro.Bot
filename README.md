@@ -18,6 +18,12 @@ Aquest és l'esquema de Hardware del P.Ro.Bot amb els 100€ de pressupost que t
 ## Esquema de Software
 Aquest és l'esquema de Software del P.Ro.Bot.
 
+Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
+
+  <ul>El mòdul de Visió per Computador (Face Recognition), on hem desenvolupat reconeixement d'una pilota i reconeixement facial. (Python)
+  <ul>El mòdul de Simulació emocional en Unity (C#)
+
+
 ![Esquema Software][]
 
 [Esquema Software]: /IMG/EsqSW.png "Esquema Software"
