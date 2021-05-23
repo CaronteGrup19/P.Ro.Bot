@@ -27,6 +27,17 @@ Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
 
 [Esquema Software]: /IMG/EsqSW.png "Esquema Software"
 
+## Simulacions realitzades
+<li>Reconeixement de persones/pilota: el mòdul de Python que es dedica a fer el reconeixement ens permet executar diferents procediments en cas que estigui visualtzant l'objecte o no.
+  
+  ***Simulació i video***
+  
+<li>Funció de Tracking de la Pilota: troba la pilota, i la retorna al Dummy que hem situat al projecte (simula el seu propietari)
+  ***Simulació i video***
+ 
+<li> Respostes anímiques (tant visuals com sonores) davant certs estímuls per definir les seves emocions.
+   ***Simulació i video dels casos***
+
 ## Autors
  Adrià Amorós Berlanga<br>
  Alex Castro Gastón<br>
