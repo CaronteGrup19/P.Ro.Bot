@@ -20,11 +20,8 @@ Aquest és l'esquema de Software del P.Ro.Bot.
 
 Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
 
-  <li>
-  <ul>El mòdul de Visió per Computador (Face Recognition), on hem desenvolupat reconeixement d'una pilota i reconeixement facial. (Python)
-  <ul>El mòdul de Simulació emocional en Unity (C#)
-    </li>
-
+  <li>El mòdul de Visió per Computador (Face Recognition), on hem desenvolupat reconeixement d'una pilota i reconeixement facial. (Python)
+  <li>El mòdul de Simulació emocional en Unity (C#)
 
 ![Esquema Software][]
 
