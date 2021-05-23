@@ -8,12 +8,18 @@ Repositori P.Ro.Bot treball per l'assignatura de Robòtica, Llenguatge i Planifi
 <p>Aquest robot és un projecte de robòtica emocional que simularà certes accions que realitzen els gossos. Principalment estarà dotat de tres funcions: utilitzar la càmera per fer un seguiment d’una pilota i així poder buscar-la, realitzar un mètode de reconeixement de persones mitjançant la càmera, i per últim, a partir d’un altaveu podrà mostrar el seu estat emociona amb lladrucs, i fins i tot mourà la cua quan vulgui jugar amb tu.
   </td><td><img src="/IMG/P.Ro.Bot.png" alt="Imatge del P.Ro.Bot" title="Imatge del P.Ro.Bot." width="1024"></td></tr></table>
 
-## Hardware Scheme
+## Esquma de Hardware
 Aquest és l'esquema de Hardware del P.Ro.Bot amb els 100€ de pressupost que teníem.
 
 ![Esquema Hardware][]
 
 [Esquema Hardware]: /IMG/EsqHW.png "Esquema Hardware"
 
+## Esquema de Software
+Aquest és l'esquema de Software del P.Ro.Bot.
+
+![Esquema Software][]
+
+[Esquema Software]: /IMG/EsqSW.png "Esquema Software"
 
 
