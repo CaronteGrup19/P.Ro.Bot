@@ -12,13 +12,13 @@ Repositori P.Ro.Bot treball per l'assignatura de Robòtica, Llenguatge i Planifi
 <!--<a href="https://docs.unity3d.com/Packages/com.unity.scripting.python@4.0/manual/index.html">Python for Unity v.4.0 o superior</a>-->
 <b>Instal·lació de les llibreries Python</b>
 
-_<li>collections
-_<li>face_recognition
-_<li>imutils
-_<li>pickle
-_<li>socket
-_<li>time
-_<li>cv2
+* [collections]
+* [face_recognition]
+* [imutils]
+* [pickle]
+* [socket]
+* [time]
+* [cv2]
 
 <b> 
 
