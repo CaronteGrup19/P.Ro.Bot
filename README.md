@@ -14,13 +14,33 @@ Repositori P.Ro.Bot treball per l'assignatura de Robòtica, Llenguatge i Planifi
 
 * collections
 * face_recognition
+* argparse
 * imutils
 * pickle
 * socket
 * time
 * cv2
+* os
 
-<b> 
+<b> Creació banc d'imatges del model face recognition
+
+Executar el fitxer 'model/buildFaceDataset.py', un cop en marxa, premer la tecla 'k' per fer una captura amb la càmera.
+Es necessari afegir el paràmetre --output a la crida del script python, aquest directori és on s'emmagatzema el dataset.
+```
+python buildFaceDataset.py --output dataset/Jeff_Goldblum
+```
+
+<b> Entrenar el model face recognition
+
+Executar el fitxer 'model/encodeFaces.py', depenent el volum del dataset, l'execusió pot demorar-se una estona.
+Es necessari especificar els atributs --dataset, directori principal del dataset i --encoding, fitxer de sortida del model entrenat.
+```
+python encodeFaces.py --dataset dataset/Jeff_Goldblum --encodings 
+```
+
+## Execusió
+
+
 
 ## Esquma de Hardware
 Aquest és l'esquema de Hardware del P.Ro.Bot amb els 100€ de pressupost que teníem.
