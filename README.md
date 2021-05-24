@@ -22,7 +22,7 @@ Repositori P.Ro.Bot treball per l'assignatura de Robòtica, Llenguatge i Planifi
 * cv2
 * os
 
-<b> Creació banc d'imatges del model face recognition
+<b> Creació banc d'imatges del model face recognition </b>
 
 Executar el fitxer 'model/buildFaceDataset.py', un cop en marxa, premer la tecla 'k' per fer una captura amb la càmera.
 Es necessari afegir el paràmetre --output a la crida del script python, aquest directori és on s'emmagatzema el dataset.
@@ -30,7 +30,7 @@ Es necessari afegir el paràmetre --output a la crida del script python, aquest 
 python buildFaceDataset.py --output dataset/Jeff_Goldblum
 ```
 
-<b> Entrenar el model face recognition
+<b> Entrenar el model face recognition </b>
 
 Executar el fitxer 'model/encodeFaces.py', depenent el volum del dataset, l'execusió pot demorar-se una estona.
 Es necessari especificar els atributs --dataset, directori principal del dataset i --encoding, fitxer de sortida del model entrenat.
@@ -38,7 +38,7 @@ Es necessari especificar els atributs --dataset, directori principal del dataset
 python encodeFaces.py --dataset dataset/Jeff_Goldblum --encodings 
 ```
 
-<b> Modificar els paràmetres de direcció IP i port (si fos el cas) dels fitxers 'python/allRecognition.py' i 'unity/Assets/MovimentEix.cs'. 
+<b> Modificar els paràmetres de direcció IP i port (si fos el cas) dels fitxers 'python/allRecognition.py' i 'unity/Assets/MovimentEix.cs'.  </b>
 
 ## Execució
 Executar la simulació Unity i el fitxer 'python/allRecognition.py'
