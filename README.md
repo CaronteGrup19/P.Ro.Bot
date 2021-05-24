@@ -38,8 +38,10 @@ Es necessari especificar els atributs --dataset, directori principal del dataset
 python encodeFaces.py --dataset dataset/Jeff_Goldblum --encodings 
 ```
 
-## Execusió
+<b> Modificar els paràmetres de direcció IP i port (si fos el cas) dels fitxers 'python/allRecognition.py' i 'unity/Assets/MovimentEix.cs'. 
 
+## Execusió
+Executar la simulació Unity i el fitxer 'python/allRecognition.py'
 
 
 ## Esquma de Hardware
