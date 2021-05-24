@@ -35,7 +35,7 @@ python buildFaceDataset.py --output dataset/Jeff_Goldblum
 Executar el fitxer 'model/encodeFaces.py', depenent el volum del dataset, l'execusió pot demorar-se una estona.
 Es necessari especificar els atributs --dataset, directori principal del dataset i --encoding, fitxer de sortida del model entrenat.
 ```
-python encodeFaces.py --dataset dataset/Jeff_Goldblum --encodings 
+python encodeFaces.py --dataset dataset/Jeff_Goldblum --encodings encodings.pickle
 ```
 
 <b> Modificar els paràmetres de direcció IP i port (si fos el cas) dels fitxers 'python/allRecognition.py' i 'unity/Assets/MovimentEix.cs'.  </b>
