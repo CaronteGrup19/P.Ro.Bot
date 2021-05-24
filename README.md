@@ -56,8 +56,9 @@ Aquest és l'esquema de Software del P.Ro.Bot.
 
 Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
 
-* El mòdul de Visió per Computador (Face Recognition), on hem desenvolupat reconeixement d'una pilota i reconeixement facial. (Python)
-* El mòdul de Simulació emocional en Unity (C#)
+* El mòdul de Visió per Computador (Face Recognition), on hem desenvolupat reconeixement d'una pilota vermella i reconeixement facial. Mitjançant Socket s'envia la informació en paquets UDP cap al mòdul Socket d'Unity.
+* Mòdul Socket d'Unity rep el paquet UDP de l'execusió Python i desa el paràmetre d'acció tractat.
+* El mòdul de Simulació emocional s'encarrega de dotar al P.Ro.Bot d'emocions i moviment. Aconsegueix el paràmetre acció del mòdul Socket.
 
 ![Esquema Software][]
 
