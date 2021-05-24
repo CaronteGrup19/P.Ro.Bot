@@ -9,7 +9,16 @@ Repositori P.Ro.Bot treball per l'assignatura de Robòtica, Llenguatge i Planifi
   </td><td><img src="/IMG/P.Ro.Bot.png" alt="Imatge del P.Ro.Bot" title="Imatge del P.Ro.Bot." width="1024"></td></tr></table>
 
 ## Pre-requisits
-<a href="https://docs.unity3d.com/Packages/com.unity.scripting.python@4.0/manual/index.html">Python for Unity v.4.0 o superior</a>
+<!--<a href="https://docs.unity3d.com/Packages/com.unity.scripting.python@4.0/manual/index.html">Python for Unity v.4.0 o superior</a>-->
+<b>Instal·lació de les llibreries Python</b>
+
+<li>collections
+<li>face_recognition
+<li>imutils
+<li>pickle
+<li>socket
+<li>time
+<li>cv2
 
 ## Esquma de Hardware
 Aquest és l'esquema de Hardware del P.Ro.Bot amb els 100€ de pressupost que teníem.
