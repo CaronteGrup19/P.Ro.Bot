@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Proves_20210510.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
