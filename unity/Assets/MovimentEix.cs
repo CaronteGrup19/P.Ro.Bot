@@ -2,11 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using System.Net;
-//using System.Net.Sockets;
+using System.Net;
+using System.Net.Sockets;
 
-//using System.Text;
-//using System.Threading;
+using System.Text;
+using System.Threading;
 
 
 
@@ -23,7 +23,6 @@ public class MovimentEix : MonoBehaviour
     public const int BUSCA = 7;
     public const int NERVIOS = 8;
     public const int TRIST = 9;
-    public const int SALUDAR = 10;
 
     public const int PILOTA = 0;
     public const int PERSONA = 1;
@@ -90,8 +89,8 @@ public class MovimentEix : MonoBehaviour
     [SerializeField] private float actualpinces;
 
 
-    public int num = -2;
-    [SerializeField] private Socket mySocket;
+    //public int num = -2;
+    //[SerializeField] private Socket mySocket;
 
 
     // Start is called before the first frame update
@@ -119,21 +118,15 @@ public class MovimentEix : MonoBehaviour
         pilotaAgafada = false;
         arribatDesti = false;
         rot_cua = cua.transform.rotation;
-
-        persona.active = true;
-        pilota.active = false;
-
-        moviment = 1;
-
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //mySocket = FindObjectOfType<Socket>();
+        //mySocket = FindObjectOfType<mySocket>();
         //moviment = mySocket.getAccio();
-        //moviment = 10;
+
         switch (moviment)
         {
             case STAND:
@@ -143,17 +136,8 @@ public class MovimentEix : MonoBehaviour
 
             case WALK: //walk
                 speed = defaultspeed;
-                i++;
-                if (i <= 2500){
-                    Curios(0);
-                    Ahead();
-                    //Stand();
-                } else {
-                    Curios(1);
-                    Ahead();
-                    //Stand();
-                }
-
+                Ahead();
+                Stand();
                 break;
 
             case T_LEFT:
@@ -173,7 +157,7 @@ public class MovimentEix : MonoBehaviour
 
             case HAPPY: //Content per anar a correr o buscar la pilota
                 speed = defaultspeed;
-                if (speed == defaultspeed) speed = 1 * defaultspeed;
+                if (speed == defaultspeed) speed = 3 * defaultspeed;
                 if (i < 50)
                 {
                     Ahead();
@@ -200,15 +184,9 @@ public class MovimentEix : MonoBehaviour
                 break;
 
             case BUSCA:
-                //Comprovem si quin objecte ï¿½s a menor distï¿½ncia
+                //Comprovem si quin objecte és a menor distància
                 //Busca pilota
-                pilota.active = true;
-                if (persona.active == true) {
-                    if (speed == defaultspeed) speed = defaultspeed * 3;
-                } else {
-                    if (speed == defaultspeed) speed = defaultspeed * 1;
-                }
-                
+                if (speed == defaultspeed) speed = defaultspeed * 1;
                 repos_track.Play();
 
                 //Guardem les dades de la cua
@@ -230,9 +208,8 @@ public class MovimentEix : MonoBehaviour
                     
                     if (!pilotaAgafada)
                     {
-                        //if (Vector3.Distance(transform.position, pilota.transform.position) < Vector3.Distance(transform.position, persona.transform.position))
-                        //if (Vector3.Distance(transform.position, pilota.transform.position) > Vector3.Distance(transform.position, persona.transform.position))
-                        //{
+                        if (Vector3.Distance(transform.position, pilota.transform.position) < Vector3.Distance(transform.position, persona.transform.position))
+                        {
                             target = PILOTA;
                             distancia = Vector3.Distance(transform.position, pilota.transform.position);
                             if (distancia >= DIST_PINCES)
@@ -243,9 +220,9 @@ public class MovimentEix : MonoBehaviour
                                     Curios(0);
                                 }
                             }
-                        //}
+                        }
                         //Busca persona
-                        /*else
+                        else
                         {
                             target = PERSONA;
                             distancia = Vector3.Distance(transform.position, persona.transform.position);
@@ -258,7 +235,7 @@ public class MovimentEix : MonoBehaviour
                                 }
 
                             }
-                        }*/
+                        }
 
 
                         //Quan s'apropa a l'objecte obre les pinces per agafar-lo i es posa content
@@ -311,35 +288,18 @@ public class MovimentEix : MonoBehaviour
 
                         if (Vector3.Distance(transform.position, posicio_inicial.transform.position) < (DIST_PINCES * 2))
                         {
-                            speed = defaultspeed;
                             Backwards();
-                            Backwards();
-                            Backwards();
-                            //lladruc_track.Play();
-                            //moviment = HAPPY;
-                            //break;
                         }
                         else
                         {
                             
-                            //ObreBoca();
+                            ObreBoca();
                             lladruc_track.Play();
                             moviment = HAPPY;
-                            
 
                         }
                     }
-                    //print("ESTAMOS AQUI!!!!!");
-                    //Happy();
-                    /*i++;
-                    if (i <= 250) {
-                        ObreBoca();
-                        //lladruc_track.Play();
-                    } else {
-                        TancaBoca();
-                    }
-                    if (i == 500) i=0;*/ 
-                    }
+                }
                 break;
             case NERVIOS:
                 nervi++;
@@ -362,35 +322,8 @@ public class MovimentEix : MonoBehaviour
                     sad_track.Play();
                 break;
 
-            case SALUDAR:
-                persona.active = true;
-                
-                speed = defaultspeed;
-                if (speed == defaultspeed) speed = 3 * defaultspeed;
-                target = PERSONA;
-                distancia = Vector3.Distance(transform.position, persona.transform.position);
-                if ((distancia - 10) >= DIST_PINCES)
-                {
-                    if (!Busca(persona))
-                    {
-                        Ahead();
-                        Happy();
-                    }
-
-                }
-                
-                Happy();
-                i++;
-                if (i <= 250) {
-                    ObreBoca();
-                    lladruc_track.Play();
-                } else {
-                    TancaBoca();
-                }
-                if (i == 500) i=0;
-                break;
         }
-        
+
     }
 
 
@@ -502,7 +435,6 @@ public class MovimentEix : MonoBehaviour
         }
         else cuaHappy.z /= 2;
         cua.transform.Rotate(cuaHappy);
-        //if (moviment == SALUDAR) lladruc_track.Play();
     }
 
     bool Busca(GameObject objecte)

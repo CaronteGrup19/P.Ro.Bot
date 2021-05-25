@@ -15,7 +15,7 @@ public class Socket : MonoBehaviour
     Thread recibirHilo; //Definimos nustra variable   recibirHilo de tipo Thread que permitira continuamente correr a la par del programa
     UdpClient cliente;  //Definimos cliente la cual servira para la recepción de datos
     int puerto;         //Definimos el entero que idicará nuestro puerto
-    private int accio = 7;
+    public int accio = -1;
 
     // Start is called before the first frame update
     void Start()
@@ -42,22 +42,21 @@ public class Socket : MonoBehaviour
             {
                 //IPEndPoint IPFinal = new IPEndPoint(IPAddress.Parse("192.168.1.36"), puerto);  //Definimos he inicializamos IP como punto final de IP con argumentos IPAdress y la variable port 
                 IPEndPoint IPFinal = new IPEndPoint(IPAddress.Parse("0.0.0.0"), puerto);
+                //print("0");
                 byte[] datos = cliente.Receive(ref IPFinal);                              //Lectura de datos de la IPFinal
+                //print("1");
                 string recibidos = Encoding.UTF8.GetString(datos);                        //Los datos se codifican y se asignan a recibidos
+                //print("2");
                 print(recibidos);
 
                 
-                switch (recibidos)
+                if( recibidos == "coneix")
                 {
-                    case "coneix":
-                        accio = 10;
-                        break;
-                    case "pilota":
-                        accio = 7;
-                        break;
-                    default:
-                        accio = 1;
-                        break;
+                    accio = 5;
+                }
+                else
+                {
+                    accio = 0;
                 }
                 
                 print("Acció = " + accio);
