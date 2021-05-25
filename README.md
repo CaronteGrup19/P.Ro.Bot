@@ -74,6 +74,6 @@ Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
 [![Video simulació](https://youtu.be/lDyxOJj_CUg/0.jpg)](https://youtu.be/lDyxOJj_CUg)
 
 ## Autors
- Adrià Amorós Berlanga<br>
- Alex Castro Gastón<br>
+ Adrià Amorós Berlanga - 1460597<br>
+ Alex Castro Gastón - 1462007<br>
  Dani Gómez Piquer - 2060700<br>
