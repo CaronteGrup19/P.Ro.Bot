@@ -72,6 +72,7 @@ Podem trobar 2 grans mòduls independents i vinculats en Unity 3D.
 * Respostes anímiques (tant visuals com sonores) davant certs estímuls per definir les seves emocions.
    
 [![Video simulació](https://youtu.be/lDyxOJj_CUg/0.jpg)](https://youtu.be/lDyxOJj_CUg)
+<a href="https://youtu.be/lDyxOJj_CUg"><img src="https://youtu.be/lDyxOJj_CUg/0.jpg" title="Video Simulació">Video Simulació</a>
 
 ## Autors
  Adrià Amorós Berlanga - 1460597<br>
